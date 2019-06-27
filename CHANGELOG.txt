@@ -1,0 +1,12 @@
+2018/03/28 v004
+	1. Update for new PLoop & Scorpio
+
+2018/01/13 v003
+	1. Remove the active command.
+	2. Support un-init secure template widgets.
+
+2018/01/13 v002
+	1. Add support for secure frames for raid panel, action buttons. But will still taint some special frames like WorldFrame, I have no power for them.
+
+2018/01/12 v001
+	1. The first release version.
