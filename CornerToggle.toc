@@ -1,7 +1,7 @@
-## Interface: 80205
+## Interface: 80300
 ## Title: CornerToggle
 ## Author: kurapica125@outlook.com
-## Version: v008
+## Version: v009
 ## Notes: Toggle frames on the screens corner
 ## Dependencies: Scorpio
 ## DefaultState: Enabled
