@@ -21,7 +21,7 @@ local _ChooseFrame
 local _MouseFocusInitFrame
 local _MouseFocusFrame
 
-local _Mask = CreateFrame("Button")
+local _Mask = CreateFrame("Button", nil, UIParent, "BackdropTemplate")
 _Mask:Hide()
 _Mask:SetToplevel(true)
 _Mask:SetFrameStrata("TOOLTIP")
@@ -259,7 +259,7 @@ end
 
 function OnEnable(self)
     for k in pairs(_CornerButtons) do
-        local cb = CreateFrame("Button", "CornerToggle_" .. k, UIParent, "SecureActionButtonTemplate")
+        local cb = CreateFrame("Button", "CornerToggle_" .. k, UIParent, "SecureActionButtonTemplate, BackdropTemplate")
 
         cb.Corner = k
         cb:SetAttribute("Corner", k)
