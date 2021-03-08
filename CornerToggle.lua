@@ -198,7 +198,7 @@ function Manager:OnClick(corner, button)
     if _MaskMode == BIND_CORNER then
         if button == "LeftButton" then
             if _ChooseFrame then
-                local name = _ChooseFrame:GetName()
+                local name = _ChooseFrame:GetName(true)
 
                 -- Remove if existed
                 for corner in pairs(_CornerButtons) do
@@ -404,7 +404,7 @@ function ToggleCorner(corner, show)
     local method = (show or _CornerButtons[corner]:GetAttribute("CornerShow")) and "Show" or "Hide"
 
     for _, v in ipairs(_SVDB[corner]) do
-        local frame = _G[v]
+        local frame = Scorpio.UI.UIObject.FromName(v)
         if frame and not SecurePanel[frame] then
             frame[method](frame)
         end
