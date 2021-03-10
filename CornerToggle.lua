@@ -400,6 +400,7 @@ function ToggleAllCorners(show)
     end
 end
 
+__NoCombat__()
 function ToggleCorner(corner, show)
     local method = (show or _CornerButtons[corner]:GetAttribute("CornerShow")) and "Show" or "Hide"
 
