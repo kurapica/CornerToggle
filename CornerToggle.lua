@@ -259,7 +259,7 @@ end
 
 function OnEnable(self)
     for k in pairs(_CornerButtons) do
-        local cb = CreateFrame("Button", "CornerToggle_" .. k, UIParent, BackdropTemplateMixin and "SecureActionButtonTemplate, BackdropTemplate" or "SecureActionButtonTemplate")
+        local cb = CreateFrame("Button", "CornerToggle_" .. k, UIParent, _G.BackdropTemplateMixin and "SecureActionButtonTemplate, BackdropTemplate" or "SecureActionButtonTemplate")
 
         cb.Corner = k
         cb:SetAttribute("Corner", k)
@@ -296,7 +296,9 @@ end
 
 function OnQuit(self)
     for k, btn in pairs(_CornerButtons) do
-        _SVDB.CornerShow[k] = btn:GetAttribute("CornerShow")
+        if type(btn) == "table" then
+            _SVDB.CornerShow[k] = btn:GetAttribute("CornerShow")
+        end
     end
 
     ToggleAllCorners(true)
