@@ -1,12 +1,16 @@
 ## Interface: 90100
+## Interface-Retail: 90100
+## Interface-Classic: 11307
+## Interface-BCC: 20502
 ## Title: CornerToggle
 ## Author: kurapica125@outlook.com
-## Version: v015
+## Version: @project-version@
 ## Notes: Toggle frames on the screens corner
 ## Dependencies: Scorpio
 ## DefaultState: Enabled
 ## LoadOnDemand: 0
 ## SavedVariablesPerCharacter: CornerToggle_DB
+## X-Curse-Project-ID: 285228
 
 # Core
 CornerToggle.lua
