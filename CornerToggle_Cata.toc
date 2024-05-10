@@ -1,4 +1,4 @@
-## Interface: 11502
+## Interface: 40400
 ## Title: CornerToggle
 ## Author: kurapica125@outlook.com
 ## Version: @project-version@
@@ -7,6 +7,7 @@
 ## DefaultState: Enabled
 ## LoadOnDemand: 0
 ## SavedVariablesPerCharacter: CornerToggle_DB
+## X-Curse-Project-ID: 285228
 
 # Core
 CornerToggle.lua
